@@ -2,15 +2,18 @@
   "name": "MernBlog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev server/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.3.5",
@@ -18,6 +21,7 @@
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.3",
+    "@types/cors": "^2.8.12",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^4.17.13",
     "@types/mongoose": "^5.11.97",
